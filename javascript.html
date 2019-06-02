@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<input id="myInput" type="text">
+	<button onclick="myFunction()">Try it</button>
+	<p id="demo"></p>
+	<script type="text/javascript">		
+		function myFunction() {
+			var a=10;
+			var b=20;
+			var c;
+			var calc = document.getElementById("myInput").value;
+			switch(calc)
+{
+    case "addition":
+           c=a+b;
+        document.getElementById("demo").innerHTML = c;
+       break;
+   case "substraction":
+   c=a-b;
+       document.getElementById("demo").innerHTML = c;
+     break;
+    case "multiply":
+    c=a*b;       
+      document.getElementById("demo").innerHTML = c;
+     break;
+    case "divison":
+    c=a/b;
+       document.getElementById("demo").innerHTML = c;
+      break;
+    case "exit":
+        break;
+    default:
+        document.getElementById("demo").innerHTML = "wrong input";
+}
+document.getElementById("demo").innerHTML = text;
+}		
+	</script>
+
+<p> </p>
+</body>
+</html>
